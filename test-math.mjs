@@ -13,7 +13,7 @@ console.log('✔ Test 1 Passed: Paisa formatting (400,000 paisa -> NPR 4,000.00)
 const breakdown = calculateLoanBreakdown(500000);
 console.assert(breakdown.principalPaisa === 500000, 'Principal mismatch');
 console.assert(breakdown.facilityFeePaisa === 30000, `Fee mismatch: got ${breakdown.facilityFeePaisa}`);
-console.assert(breakdown.totalRepaymentPaisa === 530000, `Total due mismatch: got ${breakdown.totalRepaymentPaisa}`);
+console.assert(breakdown.tpotalRepaymentPaisa === 530000, `Total due mismatch: got ${breakdown.totalRepaymentPaisa}`);
 console.assert(breakdown.lenderYieldPaisa === 20000, `Lender return mismatch: got ${breakdown.lenderYieldPaisa}`);
 console.assert(breakdown.platformReservePaisa === 5000, `Platform reserve mismatch: got ${breakdown.platformReservePaisa}`);
 console.assert(breakdown.universityFundPaisa === 5000, `University fund mismatch: got ${breakdown.universityFundPaisa}`);
